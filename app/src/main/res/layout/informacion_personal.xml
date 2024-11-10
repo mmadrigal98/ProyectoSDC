@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#ecf0f1">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Información Personal"
+        android:textSize="24sp"
+        android:textColor="#2c3e50"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Campos de entrada para información personal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="32dp">
+
+        <EditText
+            android:id="@+id/editTextName"
+            style="@style/EditTextStyle"
+            android:hint="Nombre Completo"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            style="@style/EditTextStyle"
+            android:hint="Teléfono"/>
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            style="@style/EditTextStyle"
+            android:hint="Dirección"/>
+    </LinearLayout>
+
+    <!-- Botón para agregar información -->
+    <Button
+        android:id="@+id/buttonAddInfo"
+        style="@style/ButtonStyle"
+        android:text="Agregar Información"/>
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#ecf0f1">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Administrar Novedades"
+        android:textSize="24sp"
+        android:textColor="#2c3e50"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Entrada para agregar noticia -->
+    <EditText
+        android:id="@+id/editTextNews"
+        style="@style/EditTextStyle"
+        android:hint="Agregar Noticia"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Entrada para agregar reunión -->
+    <EditText
+        android:id="@+id/editTextMeeting"
+        style="@style/EditTextStyle"
+        android:hint="Agregar Reunión"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Entrada para agregar reglamento -->
+    <EditText
+        android:id="@+id/editTextRegulation"
+        style="@style/EditTextStyle"
+        android:hint="Agregar Reglamento"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botón para agregar novedades -->
+    <Button
+        android:id="@+id/buttonAddNews"
+        style="@style/ButtonStyle"
+        android:text="Agregar Novedad"/>
+
+    <!-- Botón para eliminar novedades -->
+    <Button
+        android:id="@+id/buttonDeleteNews"
+        style="@style/ButtonStyle"
+        android:text="Eliminar Novedad"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Botón de Regresar -->
+    <Button
+        android:id="@+id/buttonBack"
+        style="@style/ButtonStyle"
+        android:text="Regresar"
+        android:layout_marginTop="24dp"/>
+</LinearLayout>

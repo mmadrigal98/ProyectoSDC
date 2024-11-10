@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_home"
+        android:title="Inicio"
+        android:icon="@android:drawable/ic_menu_home" />
+
+    <item
+        android:id="@+id/item_info"
+        android:title="Información"
+        android:icon="@android:drawable/ic_menu_info_details" />
+
+    <item
+        android:id="@+id/item_finances"
+        android:title="Finanzas"
+        android:icon="@android:drawable/ic_menu_my_calendar" />
+
+    <item
+        android:id="@+id/item_visit"
+        android:title="Visitas"
+        android:icon="@android:drawable/ic_menu_today" />
+
+</menu>
