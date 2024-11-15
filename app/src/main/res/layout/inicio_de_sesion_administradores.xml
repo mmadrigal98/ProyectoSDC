@@ -8,16 +8,25 @@
     android:padding="24dp"
     tools:context=".MainActivity">
 
-    <!-- Título: Filial -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintGuidePercent="0.5"
+        app:orientation="vertical" />
 
-    <!-- Campo de texto: Nombre de la Filial -->
+
+    <!-- Botones -->
 
     <TextView
-        android:id="@+id/textViewFilial"
+        android:id="@+id/textViewTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:text="Filial"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="Bienvenido al Condominio"
         android:textColor="#2c3e50"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -27,84 +36,74 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextFilial"
+        android:id="@+id/editTextUsername"
+        style="@style/EditTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
-        android:hint="Nombre de la Filial"
+        android:hint="Nombre de Administrador"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewFilial" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
 
-    <!-- Título: Mascota -->
-    <TextView
-        android:id="@+id/textViewMascota"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Mascota"
-        android:textColor="#2c3e50"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextFilial" />
-
-    <!-- Campo de texto: Mascota -->
     <EditText
-        android:id="@+id/editTextMascota"
+        android:id="@+id/editTextCodigo"
+        style="@style/EditTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-        android:hint="Nombre de la Mascota"
+        android:hint="Codigo de Administrador"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMascota" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
 
-    <!-- Título: Vehículos -->
-    <TextView
-        android:id="@+id/textViewVehiculos"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Vehículos"
-        android:textColor="#2c3e50"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextMascota" />
-
-    <!-- Campo de texto: Vehículos -->
     <EditText
-        android:id="@+id/editTextVehiculo"
+        android:id="@+id/editTextPassword"
+        style="@style/EditTextStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="20dp"
-        android:hint="Nombre del Vehículo"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewVehiculos" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextCodigo" />
 
-
-    <!-- Boton Regresar -->
     <Button
-        android:id="@+id/buttonReturn"
+        android:id="@+id/buttonLogin"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:text="Iniciar sesión"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+    <Button
+        android:id="@+id/buttonUserLogin"
         style="@style/ButtonStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="20dp"
-        android:text="Regresar"
+        android:text="Ingresar como Usuario"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextVehiculo" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonLogin" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

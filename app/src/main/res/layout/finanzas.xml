@@ -1,46 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#ecf0f1"
     android:padding="24dp"
-    android:background="#ecf0f1">
+    tools:context=".MainActivity">
 
-    <!-- Título -->
+    <!-- Título: Saldo del mes -->
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/textViewSaldoMes"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Finanzas"
+        android:text="Saldo del mes"
+        android:textColor="#2c3e50"
         android:textSize="24sp"
-        android:textColor="#2c3e50"
         android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginBottom="40dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Información de saldo -->
+    <!-- Campo de texto: Cantidad del saldo -->
     <TextView
-        android:id="@+id/textViewBalance"
-        android:layout_width="match_parent"
+        android:id="@+id/textViewSaldoCantidad"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Saldo: $100"
-        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Cantidad: $500.00"
         android:textColor="#2c3e50"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSaldoMes" />
 
+    <!-- Título: Estado -->
     <TextView
-        android:id="@+id/textViewStatus"
-        android:layout_width="match_parent"
+        android:id="@+id/textViewEstado"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Estado"
+        android:textColor="#2c3e50"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSaldoCantidad" />
+
+    <!-- Campo de texto: Estado -->
+    <TextView
+        android:id="@+id/textViewEstadoValor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:text="Estado: Pagado"
-        android:textSize="18sp"
         android:textColor="#2c3e50"
-        android:gravity="center"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstado" />
 
-    <!-- Botón de Regresar -->
+    <!-- Título: Saldo restante -->
+    <TextView
+        android:id="@+id/textViewSaldoRestante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Saldo restante"
+        android:textColor="#2c3e50"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewEstadoValor" />
+
+    <!-- Campo de texto: Saldo restante -->
+    <TextView
+        android:id="@+id/textViewSaldoRestanteValor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Saldo restante: $100.00"
+        android:textColor="#2c3e50"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSaldoRestante" />
+
+    <!-- Botón: Adjuntar Comprobante -->
+    <!-- Usando el mismo estilo que el botón de inicio de sesión -->
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:text="Adjuntar Comprobante"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/textViewSaldoRestanteValor" />
+
+    <!-- Boton Adjuntar Comprobante -->
+
+    <!-- Boton Regresar -->
+
     <Button
-        android:id="@+id/buttonBack"
+        android:id="@+id/buttonComprobante"
         style="@style/ButtonStyle"
-        android:text="Regresar"/>
-</LinearLayout>
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Adjuntar Comprobante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSaldoRestanteValor" />
+
+    <Button
+        android:id="@+id/buttonReturn"
+        style="@style/ButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonComprobante" />
+</androidx.constraintlayout.widget.ConstraintLayout>
