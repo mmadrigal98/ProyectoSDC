@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/ButtonStyle"
+        android:layout_width="348dp"
+        android:layout_height="44dp"
+        android:text="Abrir lista de Alarmas"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/ButtonStyle"
+        android:layout_width="348dp"
+        android:layout_height="44dp"
+        android:text="Abrir lista de Camaras"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="145dp" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_height="wrap_content"
+        android:text="Lista de Seguridad"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="91dp" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/ButtonStyle"
+        android:layout_width="348dp"
+        android:layout_height="44dp"
+        android:text="Abrir lista de personal de seguridad"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="292dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

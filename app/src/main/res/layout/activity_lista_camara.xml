@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="46dp"
+        tools:text="Lista Camaras" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cobertura"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultima Revision"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horario de Monitoreo"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="372dp" />
+
+    <EditText
+        android:id="@+id/editTextText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/editTextDate3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <EditText
+        android:id="@+id/editTextText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="183dp"
+        tools:layout_editor_absoluteY="356dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/ButtonStyle"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:text="Regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="472dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

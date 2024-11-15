@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf0f1"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="159dp" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ultima Revision"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <EditText
+        android:id="@+id/editTextText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="119dp"
+        tools:layout_editor_absoluteY="90dp" />
+
+    <EditText
+        android:id="@+id/editTextDate4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        tools:layout_editor_absoluteX="151dp"
+        tools:layout_editor_absoluteY="297dp" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="160dp"
+        tools:layout_editor_absoluteY="46dp"
+        tools:text="Lista Alarma" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metodo de Activación"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="273dp" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubicación"
+        tools:layout_editor_absoluteX="46dp"
+        tools:layout_editor_absoluteY="109dp" />
+
+    <TextView
+        android:id="@+id/textView35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estado"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="215dp" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/ButtonStyle"
+        android:layout_width="144dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginEnd="150dp"
+        android:text="Regresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="433dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
